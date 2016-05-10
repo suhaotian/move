@@ -15,7 +15,7 @@ function drag(id)
             oDiv.style.left = oEvent.clientX - distX + 'px';
             oDiv.style.top = oEvent.clientY - distY + 'px';
         }
-        oDiv.onmouseup = function(e)
+        oDiv.onmouseout = oDiv.onmouseup = function(e)
         {
             document.onmousemove = null;
             oDiv.onmouseup = null;
